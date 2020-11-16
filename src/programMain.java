@@ -10,9 +10,8 @@ public class programMain {
         Point3D point3D=new Point3D(1,1,5);
         System.out.println(point3D);
 
-        //MovablePoint movablePoint=new MovablePoint(10.2f,5.3f);
-        MovablePoint movablePoint= (MovablePoint) point2D;
-        System.out.println(movablePoint.getX());
-        System.out.println(movablePoint);
+        MovablePoint movablePoint= new MovablePoint(point2D.getX(),point2D.getY(),1.2f,2.3f);
+
+        System.out.println(movablePoint.move());
     }
-    }
+}

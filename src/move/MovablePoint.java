@@ -7,6 +7,11 @@ public class MovablePoint extends Point2D {
     private float ySpeed=0.0f;
 
     public MovablePoint(){}
+    public MovablePoint(float x,float y,float xSpeed,float ySpeed){
+        setXY(x,y);
+        this.xSpeed=xSpeed;
+        this.ySpeed=ySpeed;
+    }
     public MovablePoint(float xSpeed,float ySpeed){
         this.xSpeed=xSpeed;
         this.ySpeed=ySpeed;
@@ -43,6 +48,8 @@ public class MovablePoint extends Point2D {
         return "MovablePoint{" +
                 "xSpeed=" + xSpeed +
                 ", ySpeed=" + ySpeed +
+                " ,x= "+getX()+
+                " ,y= "+getY()+
                 '}';
     }
     public MovablePoint move(){

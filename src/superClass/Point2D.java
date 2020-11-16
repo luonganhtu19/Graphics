@@ -3,9 +3,9 @@ package superClass;
 import java.util.Arrays;
 
 public class Point2D {
-    private float x = 0;
-    private float y = 0;
-    private  float[] arr = new float[2];
+    private float x = 0f;
+    private float y = 0f;
+
 
     public Point2D(float x, float y) {
         this.x = x;
@@ -38,6 +38,7 @@ public class Point2D {
     }
 
     public float[] getXY() {
+         float[] arr = new float[2];
         arr[0] = x;
         arr[1] = y;
         return arr;
@@ -48,7 +49,7 @@ public class Point2D {
         return "Point2D{" +
                 "x=" + x +
                 ", y=" + y +
-                ", arr=" + Arrays.toString(arr) +
+                ", arr=" + Arrays.toString(getXY()) +
                 '}';
     }
 }
